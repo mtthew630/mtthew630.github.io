@@ -3,16 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-items">
-            <a href="/">About</a>
-            <a href="/">Experience</a>
-            <a href="/">Projects</a>
-            <a href="/">Contact</a>
+    <header>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <button class="menu-button" onclick="openNav()"><i class="material-icons" style="font-size:40px;">menu</i></button>
+            
+            <div class="sidebar-social">
+                <i class="fa-brands fa-github fa-xl"></i>
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </div>
+        </aside>
+        
+        <!-- Menu -->
+        <div id="sidebar-menu" class="sidebar-menu">
+            <button class="close-button" onclick="closeNav()"><i class="material-icons" style="font-size:40px;">close</i></button>
+            <div class="menu-links">
+                <a href="/"><strong class="menu-index">01.</strong>About</a>
+                <a href="/"><strong class="menu-index">02.</strong>Experience</a>
+                <a href="/"><strong class="menu-index">03.</strong>Projects</a>
+                <a href="/"><strong class="menu-index">04.</strong>Contact Me</a>
+            </div>
+            
         </div>
-    </nav>
+    </header>
+    
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="heading-line">
+                <div class="line-title">Matthew</div>
+                <div class="line-subtitle">Cooking since 2000.</div>
+            </div>
+            <div class="heading-line">
+                <div class="line-title">Chin</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section">
+        <div class="about-content">
+            <aside class="img-col">
+                <figure class="img-frame">
+                    <img src="" alt="image">
+                </figure>
+            </aside>
+            <aside class="text-col">
+                <div class="about-text">
+                    <div class="text-header">
+                        <h2>01 // Who I Am</h2>
+                    </div>
+                    <div class="text-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, error. Veritatis neque quod sequi eveniet soluta velit molestiae ut corrupti modi, illo inventore eos qui aliquid quasi! Sed, impedit deleniti.</p>
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+
+        <div class="underlabel">
+            <span class="underlabel-text">About</span>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="exp-section">
+        <div class="underlabel">
+            <span class="underlabel-text"></span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section">
+        <div class="underlabel">
+            <span class="underlabel-text"></span>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

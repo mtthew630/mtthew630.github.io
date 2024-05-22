@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: pink;
+    border-width: 1px;
+}
+
+body {
+    background: #FFFF;
+}
+
+.sidebar {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: ;
+    overflow-x: hidden;
+    padding: 25px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar-social {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 50px; */
+    gap: 40px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #FFFF;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow-x: hidden;
+}
+
+.close-button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    padding: 25px;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-index {
+    font-size: 32px;
+    padding: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', Courier, monospace;
+    font-size: 128px;
+    font-weight: 600;
+    
+}
+
+.sidebar-menu a:hover {
+    background-color: #E21836;
+}
+
+h4 {
+    font-size: 1.728rem;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue';
+    font-size: 128px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 750px;
+    width: 750px;
+    transition: 2s;
+}
+
+.heading-line {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+}
+
+.heading-line:not(last-child) {
+    margin-bottom: 0;
+}
+
+.heading-line:last-child {
+    justify-content: flex-end;
+    color: #E21836;
+}
+
+.line-subtitle {
+    font-family: 'Sedan';
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+.line-title {
+    margin-bottom: -.19em;
+}
+
+.about-section {
+    padding-top: 250px;
+    padding-bottom: 500px;
+    margin: 0 100px;
+    position: relative;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 200px 0;
+}
+
+.about-text {
+    margin: 0 auto 100px;
+    padding-top: 40px;
+    max-width: 450px;
+}
+
+.text-header {
+    margin-bottom: 1em;
+}
+
+.underlabel {
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+    top: 0;
+    left: 0rem;
+}
+
+.underlabel-text {
+    color: black;
+    opacity: 5%;
+    font-family: 'Bebas Neue';
+    font-size: 35rem;
+    font-weight: 600;
+    white-space: none;
+}
+
+.img-col {
+    display: flex;
+}
+.img-frame {
+    margin: 0 auto 100px;
+    padding-top: 40px;
+}
