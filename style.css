@@ -11,14 +11,40 @@ body {
     background: #FFFF;
 }
 
+.underlabel {
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+    top: 0;
+    left: 0rem;
+}
+
+.underlabel-text {
+    color: black;
+    opacity: 5%;
+    font-family: 'Bebas Neue';
+    font-size: 35rem;
+    /* font-weight: 600; */
+    white-space: none;
+}
+
+.text-header {
+    margin-bottom: 1em;
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+}
+
+/* ==== SIDEBAR ==== */
+
 .sidebar {
     height: 100%;
     width: 100px;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
-    background-color: ;
+    bottom: 0;
+    background-color: #FFFF;
     overflow-x: hidden;
     padding: 25px 0 50px;
     display: flex;
@@ -37,7 +63,6 @@ body {
 .sidebar-social {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 50px; */
     gap: 40px;
 }
 
@@ -49,9 +74,11 @@ body {
     width: 0;
     height: 100%;
     top: 0;
-    left: 0;
-    z-index: 2;
+    left: 100px;
+    z-index: 3;
     overflow-x: hidden;
+    overflow-y: hidden;
+    transition: width 1s;
 }
 
 .close-button {
@@ -80,16 +107,14 @@ body {
     font-family: 'Bebas Neue', Courier, monospace;
     font-size: 128px;
     font-weight: 600;
-    
+    white-space: nowrap;
 }
 
 .sidebar-menu a:hover {
     background-color: #E21836;
 }
 
-h4 {
-    font-size: 1.728rem;
-}
+/* ==== HERO ==== */
 
 .hero-section {
     display: flex;
@@ -136,6 +161,8 @@ h4 {
     margin-bottom: -.19em;
 }
 
+/* ==== ABOUT ==== */
+
 .about-section {
     padding-top: 250px;
     padding-bottom: 500px;
@@ -155,31 +182,93 @@ h4 {
     max-width: 450px;
 }
 
-.text-header {
-    margin-bottom: 1em;
-}
-
-.underlabel {
-    position: absolute;
-    text-transform: uppercase;
-    z-index: 1;
-    top: 0;
-    left: 0rem;
-}
-
-.underlabel-text {
-    color: black;
-    opacity: 5%;
-    font-family: 'Bebas Neue';
-    font-size: 35rem;
-    font-weight: 600;
-    white-space: none;
-}
-
 .img-col {
     display: flex;
 }
 .img-frame {
     margin: 0 auto 100px;
-    padding-top: 40px;
+    width: 250px;
+    height: 250px;
+}
+
+/* ==== EXPERIENCE ==== */
+
+.exp-section {
+    height: 1500px;
+    padding-top: 250px;
+    padding-bottom: 500px;
+    margin: 0 100px;
+    position: relative;
+}
+
+.exp-section .underlabel {
+    transform: rotate(90deg) translate(500px, 500px);
+}
+
+.exp-section .underlabel-text {
+    font-size: 25rem;
+}
+
+.exp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    right: 100px;
+}
+
+.exp-card {
+    display: flex;
+    gap: 30px;
+    width: 800px;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.exp-date {
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.exp-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.exp-card-content h2 {
+    font-family: 'Bebas Neue';
+    font-size: 26px;
+}
+
+.skill-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-pill {
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-family: 'Bebas Neue';
+}
+
+.resume-link {
+    font-family: 'Bebas Neue';
+    font-size: 26px;
+}
+
+/* ==== PROJECTS ==== */
+
+.projects-section {
+    padding-top: 250px;
+    padding-bottom: 500px;
+    position: relative;
+}
+
+/* ==== CONTACT ==== */
+
+.contact-section {
+    padding-top: 250px;
+    padding-bottom: 500px;
+    position: relative;
 }
