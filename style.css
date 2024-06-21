@@ -1,3 +1,58 @@
+:root {
+    /* colors */
+    --clr-bg: #FFFF;
+    --clr-text: black;
+    --clr-accent: #E21836;
+
+    /* font families */
+    --ff-primary: 'Bebas Neue', sans-serif;
+    --ff-secondary: 'Sedan', serif;
+
+    /* font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* font sizes */
+    --fs-display-xl: 128px;
+    --fs-display-l: 96px;
+    --fs-display-m: 52px;
+    --fs-display-s: 44px;
+    --fs-display-xs: 36px;
+
+    --fs-heading-xxl: 40px;
+    --fs-heading-xl: 36px;
+    --fs-heading-l: 32px;
+    --fs-heading-m: 28px;
+    --fs-heading-s: 24px;
+    --fs-heading-xs: 20px;
+
+    --fs-paragraph-l: 18px;
+    --fs-paragraph-m: 16px;
+    --fs-paragraph-s: 14px;
+    --fs-paragraph-xs: 12px;
+
+    /* line height */
+    --lh-display-xl: 112px;
+    --lh-display-l: 112px;
+    --lh-display-m: 64px;
+    --lh-display-s: 52px;
+    --lh-display-xs: 44px;
+
+    --lh-heading-xxl: 52px;
+    --lh-heading-xl: 44px;
+    --lh-heading-l: 40px;
+    --lh-heading-m: 36px;
+    --lh-heading-s: 32px;
+    --lh-heading-xs: 28px;
+
+    --lh-paragraph-l: 28px;
+    --lh-paragraph-m: 24px;
+    --lh-paragraph-s: 20px;
+    --lh-paragraph-xs: 20px;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +63,8 @@
 }
 
 body {
-    background: #FFFF;
-    font-family: 'Sedan', Courier New, Courier, monospace;
+    background: var(--clr-bg);
+    font-family: var(--ff-secondary);
 }
 
 .underlabel {
@@ -17,21 +72,22 @@ body {
     text-transform: uppercase;
     z-index: 1;
     top: 0;
-    left: 0rem;
+    left: 0;
 }
 
 .underlabel-text {
     color: black;
     opacity: 5%;
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
+    font-family: var(--ff-primary);
     font-size: 35rem;
     white-space: none;
 }
 
 .text-header {
     margin-bottom: 1em;
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
-    font-size: 32px;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-heading-l);
+    font-weight: 100;
 }
 
 /* ==== SIDEBAR ==== */
@@ -104,14 +160,14 @@ body {
     display: flex;
     text-decoration: none;
     color: black;
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
-    font-size: 128px;
-    font-weight: 600;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-display-xl);
+    font-weight: var(--fw-bold);
     white-space: nowrap;
 }
 
 .sidebar-menu a:hover {
-    background-color: #E21836;
+    background-color: var(--clr-accent);
 }
 
 /* ==== HERO ==== */
@@ -127,8 +183,6 @@ body {
 .hero-content {
     display: flex;
     flex-direction: column;
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
-    font-size: 128px;
     padding-left: 40px;
     padding-right: 40px;
     max-width: 750px;
@@ -148,18 +202,20 @@ body {
 
 .heading-line:last-child {
     justify-content: flex-end;
-    color: #E21836;
+    color: var(--clr-accent);
 }
 
 .line-subtitle {
-    font-family: 'Sedan', Courier New, Courier, monospace;
-    font-size: 20px;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-paragraph-l);
     padding-left: 20px;
     margin-bottom: 1em;
 }
 
 .line-title {
-    margin-bottom: -.19em;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-display-xl);
+    line-height: var(--lh-display-xl);
 }
 
 /* ==== ABOUT ==== */
@@ -186,6 +242,7 @@ body {
 .img-col {
     display: flex;
 }
+
 .img-frame {
     margin: 0 auto 100px;
     width: 250px;
@@ -215,7 +272,7 @@ body {
     flex-direction: column;
     gap: 30px;
     position: absolute;
-    right: 100px;
+    right: 200px;
 }
 
 .exp-card {
@@ -223,7 +280,7 @@ body {
     gap: 30px;
     width: 800px;
     padding: 20px;
-    font-size: 16px;
+    font-size: var(--fs-paragraph-m);
 }
 
 .exp-date {
@@ -238,8 +295,8 @@ body {
 }
 
 .exp-card-content h2 {
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
-    font-size: 26px;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-heading-m);
 }
 
 .skill-bar {
@@ -250,12 +307,14 @@ body {
 .skill-pill {
     padding: 5px 10px;
     border-radius: 50px;
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
 }
 
 .resume-link {
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
-    font-size: 26px;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-heading-m);
 }
 
 /* ==== PROJECTS ==== */
@@ -299,7 +358,7 @@ body {
 }
 
 .project-card-head h2 {
-    font-family: 'Bebas Neue', Courier New, Courier, monospace;
+    font-family: var(--ff-primary);
 }
 
 .project-desc {
