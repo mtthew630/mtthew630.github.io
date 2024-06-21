@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,8 +18,8 @@
             <button class="menu-button" onclick="openNav()"><i class="material-icons" style="font-size:40px;">menu</i></button>
             
             <div class="sidebar-social">
-                <i class="fa-brands fa-github fa-xl"></i>
-                <i class="fa-brands fa-linkedin fa-xl"></i>
+                <a href="https://github.com/mtthew630" target="_blank" class="fa-brands fa-github fa-xl"></a>
+                <a href="https://www.linkedin.com/in/nathanielmatthewchin/" target="_blank" class="fa-brands fa-linkedin fa-xl"></a>
             </div>
         </aside>
         
@@ -28,10 +27,10 @@
         <div id="sidebar-menu" class="sidebar-menu">
             <button class="close-button" onclick="closeNav()"><i class="material-icons" style="font-size:40px;">close</i></button>
             <div class="menu-links">
-                <a href="#about-section"><strong class="menu-index">01.</strong>About</a>
-                <a href="#exp-section"><strong class="menu-index">02.</strong>Experience</a>
-                <a href="#projects-section"><strong class="menu-index">03.</strong>Projects</a>
-                <a href="#contact-section"><strong class="menu-index">04.</strong>Contact Me</a>
+                <a href="#about-section" onclick="closeNav()"><strong class="menu-index">01.</strong>About</a>
+                <a href="#exp-section" onclick="closeNav()"><strong class="menu-index">02.</strong>Experience</a>
+                <a href="#projects-section" onclick="closeNav()"><strong class="menu-index">03.</strong>Projects</a>
+                <a href="#contact-section" onclick="closeNav()"><strong class="menu-index">04.</strong>Contact Me</a>
             </div>
         </div>
     </header>
@@ -61,7 +60,7 @@
             <aside class="text-col">
                 <div class="about-text">
                     <div class="text-header">
-                        <h2>01 // Who I Am</h2>
+                        <h2><b>01 // </b>Who I Am</h2>
                     </div>
                     <div class="text-desc">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, error. Veritatis neque quod sequi eveniet soluta velit molestiae ut corrupti modi, illo inventore eos qui aliquid quasi! Sed, impedit deleniti.</p>
@@ -84,7 +83,7 @@
         
         <div class="exp-content">
             <div class="text-header">
-                <h2>02 // Where I've Worked</h2>
+                <h2><b>02 // </b>Where I've Worked</h2>
             </div>
             <div class="exp-card">
                 <aside class="exp-date">
@@ -128,7 +127,11 @@
                     </div>
                 </aside>
             </div>
-            <a href="/" class="resume-link">View Full Resume</a>
+            <div class="resume-link">
+                <a href="/">View Full Resume<i class="material-icons" style="font-size:28px;">arrow_outward</i></a>
+                
+            </div>
+            
         </div>
     </section>
 
@@ -139,7 +142,7 @@
         </div>
         <div class="project-content">
             <div class="text-header">
-                <h2>03 // What I've Built</h2>
+                <h2><b>03 // </b>What I've Built</h2>
             </div>
 
             <div class="project-container">
